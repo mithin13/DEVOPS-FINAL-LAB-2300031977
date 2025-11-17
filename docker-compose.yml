@@ -14,7 +14,7 @@ services:
     image: mithin13/2300031977-final-backend:latest
     container_name: examspringboot
     ports:
-      - "30032:2000"
+      - "30033:2000"
     depends_on:
       - mysqldb
     restart: on-failure
@@ -23,7 +23,7 @@ services:
     image: mithin13/2300031977-final-frontend:latest
     container_name: examreact
     ports:
-      - "30031:80"
+      - "30034:80"
     depends_on:
       - backend
 
